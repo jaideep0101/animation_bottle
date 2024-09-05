@@ -1,0 +1,42 @@
+.container{
+position: relative;
+height: 100vh;
+
+}
+
+.cane{
+  position: absolute;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+  bottom: 170px;
+ --left:230px;
+}
+
+.cane .pack{
+  background: url(./assets/bg1.jpeg) var(--left), url(./assets/mockup.png);
+  background-size: auto 100%;
+  width: 280px;
+  aspect-ratio: 2/4;
+  background-blend-mode: multiply;
+  mask-image:url(./assets/mockup.png);
+  mask-size: auto 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+}
+.cane .pack:hover{
+  background: url(./assets/bg2.jpg) var(--left), url(./assets/mockup.png);
+  background-size: auto 100%;
+  width: 280px;
+  aspect-ratio: 2/4;
+  background-blend-mode: multiply;
+  mask-image:url(./assets/mockup.png);
+  mask-size: auto 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+  --left: -1000px;
+  transform: translateX(-50%) translateY(-20%);
+}
